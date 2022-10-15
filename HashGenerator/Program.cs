@@ -5,8 +5,12 @@ using System.Text;
 
 using (var hasher = MD5.Create())
 {
-    var md5_hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes("ABC"));
-    Console.WriteLine($"MD5 -> {BitConverter.ToString(md5_hashed).Replace("-", "")}");
+    var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes("ABC"));
+    Console.WriteLine($"MD5 -> {BitConverter.ToString(hashed).Replace("-", "")}");
 }
 
-
+using (var hasher = SHA256.Create())
+{
+    var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes("ABC"));
+    Console.WriteLine($"MD5 -> {BitConverter.ToString(hashed).Replace("-", "")}");
+}
