@@ -10,6 +10,12 @@ using (var hasher = MD5.Create())
     Console.WriteLine($"MD5 -> {BitConverter.ToString(hashed).Replace("-", "")}");
 }
 
+using (var hasher = SHA1.Create())
+{
+    var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes(target_word));
+    Console.WriteLine($"SHA1 -> {BitConverter.ToString(hashed).Replace("-", "")}");
+}
+
 using (var hasher = SHA256.Create())
 {
     var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes(target_word));
