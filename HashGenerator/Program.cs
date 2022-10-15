@@ -15,3 +15,18 @@ using (var hasher = SHA256.Create())
     var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes(target_word));
     Console.WriteLine($"SHA254 -> {BitConverter.ToString(hashed).Replace("-", "")}");
 }
+
+using (var hasher = SHA384.Create())
+{
+    var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes(target_word));
+    Console.WriteLine($"SHA384 -> {BitConverter.ToString(hashed).Replace("-", "")}");
+}
+
+using (var hasher = SHA512.Create())
+{
+    var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes(target_word));
+    Console.WriteLine($"SHA512 -> {BitConverter.ToString(hashed).Replace("-", "")}");
+}
+
+
+
