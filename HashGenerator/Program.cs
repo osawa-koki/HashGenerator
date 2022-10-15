@@ -12,5 +12,5 @@ using (var hasher = MD5.Create())
 using (var hasher = SHA256.Create())
 {
     var hashed = hasher.ComputeHash(Encoding.UTF8.GetBytes("ABC"));
-    Console.WriteLine($"MD5 -> {BitConverter.ToString(hashed).Replace("-", "")}");
+    Console.WriteLine($"SHA254 -> {BitConverter.ToString(hashed).Replace("-", "")}");
 }
