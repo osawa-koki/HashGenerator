@@ -53,5 +53,3 @@
 *.gif       -text
 
 *.db        -text
-*.dbt       -text
-*.sqlite    -text
