@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HashGenerator": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
