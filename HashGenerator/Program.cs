@@ -5,7 +5,7 @@ const string target_word = "ABC";
 
 Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine("");
-Console.WriteLine("===== Hashing Target {0} =====", target_word);
+Console.WriteLine("===== Hashing Target \"{0}\" =====", target_word);
 Console.WriteLine("");
 Console.ResetColor();
 
